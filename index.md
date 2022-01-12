@@ -27,7 +27,7 @@ Below is a numbered list sample.
 Here is the horizontal rule:
 ---
 
-'Inline code' with backticks
+`Inline code` with backticks
 
 ```
 # code block
