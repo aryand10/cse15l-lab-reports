@@ -6,7 +6,7 @@
 **Bold Sample**
 
 Below is a link sample.
-![Link](https://ucsd-cse15l-w22.github.io)
+[Link](https://ucsd-cse15l-w22.github.io)
 
 
 Below is an image sample.
