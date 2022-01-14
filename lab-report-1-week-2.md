@@ -133,7 +133,7 @@ This should look something like this below.
 ![Image](Optimization.jpg)
 
 You will be able to transfer your file from your local computer to `ieng6` and compile and run the porgram in just 2 command lines. 
-___
+
 You now know the basic of logging in to a remote computer and performing some basic functions!
 
 
