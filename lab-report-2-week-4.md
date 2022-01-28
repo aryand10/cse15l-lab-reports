@@ -1,4 +1,4 @@
-# Lab Report 1 (Week 2)
+# Lab Report 2 (Week 4)
 
 Hello! This page covers some of the errors and their respective solutions for a program called `MarkdownParse`, which has the goal of getting all web links from a `.md` file!
 
