@@ -67,6 +67,9 @@ ___
 **Relationship Between Bug, Symptom, and Error**
 
 The file, `newLineAtEnd.md`, featured an empty line at the end of the file after two links were present. This resulted in an `IndexOutOfBoundsException` in which the code since the indices did not exist for the line at the end because it was empty. To fix this, a line was added for one of the if-statement that would ensure the next open bracket was at index 0 or there was not an exclamation point at index 0. As a result, an index out of bounds error was not thrown when running `newLineAtEnd.md` with `MarkdownParse.java`.
+___
+
+Now you are familiar with some of the common errors that you can encounter while programming as well as the solutions to fix them!
 
 
 
