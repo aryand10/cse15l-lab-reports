@@ -18,7 +18,7 @@ ___
 ![Image](Break-TestFixPicture.png)
 
 To fix the bug that caused the error, the above changes were made to the code.
-____
+___
 
 **Relationship Between Bug, Symptom, and Error**
 
