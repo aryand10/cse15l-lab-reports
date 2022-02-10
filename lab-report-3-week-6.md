@@ -13,7 +13,7 @@ To access your `.ssh/config` file, use the command `cd ~/.ssh` from your main us
 
 ---
 ![Image](CDSSH_NanoConfig.jpg)
-***
+
 
 Once you enter the `nano config` command, the `nano` editor will appear. In the `nano` editor, paste the following code.
 ```
@@ -31,7 +31,7 @@ To save this, perform `Control+x`. When asked whether or not to save the file, s
 
 ---
 ![Image](SavingNanoFile.jpg)
-***
+
 
 You can just click `return` on your keyboard to leave the `nano` editor. 
 
@@ -64,7 +64,8 @@ This will add the file to my account on `ieng6`. An image of this can be seen be
 ![Image](SCPwithSSHShortcut.jpg)
 
 To double check that this file was successfully added to my `ieng6` account, I then logged on to `ieng6` and used the `ls` command to see what files were in my `ieng6` directory. As you can see, the file `HelloWorld.txt` was successfully transferred to my `ieng6` directory.
-***
+
+---
 
 There you have it! Now you have a shortcut and alias that you can use to log on to and use commands for `ieng6` in a faster and more efficient way!
 
