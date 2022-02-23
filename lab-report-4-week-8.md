@@ -31,13 +31,15 @@ When used in a `.md` file, the expected preview for the `Markdown` would be a pa
 
 When tested with our versions of `MarkdownParse.java` the `getLinks` method would return a list as follows:
 ```
-[“`google.com”, “google.com”, “ucsd.edu”]
+[`google.com, google.com, ucsd.edu]
 ```
 
 **Testing this Snippet**
 
 First create a file titled `snippet1.md` containing the code for the Snippet as detailed above. The file you created should look like the image below.
+
 ![Image](Snippet1File.jpg)
+
 
 Then, in the `MarkdownParseTest.java` file, we will add a `JUnit` test for this file. Add the following code into `MarkdownParseTest.java`.
 ```
@@ -81,7 +83,7 @@ When used in a `.md` file, the expected preview for the `Markdown` would be a pa
 
 When tested with our versions of `MarkdownParse.java` the `getLinks` method would return a list as follows:
 ```
-[“a.com”, “a.com(())”, “example.com”]
+[a.com, a.com(()), example.com]
 ```
 
 **Testing this Snippet**
@@ -150,7 +152,7 @@ When used in a `.md` file, the expected preview for the `Markdown` would be a pa
 
 When tested with our versions of `MarkdownParse.java` the `getLinks` method would return a list as follows:
 ```
-[“https://twitter.com”, “https://ucsd-cse15l-w22.github.io/“, “https://cse.ucsd.edu/“]
+[https://twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]
 ```
 
 **Testing this Snippet**
