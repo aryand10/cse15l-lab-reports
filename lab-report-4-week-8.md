@@ -181,7 +181,19 @@ This test also failed for the other version of `MarkdownParse`. The below image 
 
 ## Additional Questions
 ---
+1) Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
+    For my markdown parse, to fix this error I do think there is a small code change that could potentially work. The change to be made will simply be an ‘if’ statement that would search for backticks before the first bracket for a link. This if statement would result in that line being skipped and the code moving on to the next potential link.  
+
+2) Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+    There could be a small code change that fixes this issue. You could simply have a loop that after collecting the first open parenthesis, goes through each parenthesis (open or closed) after until it finds a closed parenthesis that does not have another open or close parenthesis immediately after it. This could then be considered the final closed parenthesis and be used as the other bound that encapsulates the link.
+
+3) Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+    There could be a simple code change that fixes the issue. To ensure that new lines are allowed within the brackets and parenthesis, you could uses String.trim() to eliminate all white space in the contents of the file first. Then, after all the white space is eliminated (which includes new lines), you could run the code normally as it typically functions without errors when new lines are not there. 
+
+___
 
 
 
