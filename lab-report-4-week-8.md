@@ -110,6 +110,79 @@ For my version of `MarkdownParse` the test for Snippet 2 failed. The below image
 This test also failed for the other version of `MarkdownParse`. The below image showcases the `JUnit` output that shows the test failure.
 ![Image](Snippet2OtherOutput.jpg)
 
+## Snippet 3 Testing 
+---
+
+Below is a code snippet for another sample file that is designed to test another edge case for `MarkdownParse.java`. 
+
+```
+[this title text is really long and takes up more than 
+one line
+
+and has some line breaks](
+    https://www.twitter.com
+)
+
+[this title text is really long and takes up more than 
+one line](
+    https://ucsd-cse15l-w22.github.io/
+)
+
+
+[this link doesn't have a closing parenthesis](github.com
+
+And there's still some more text after that.
+
+[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+
+
+
+)
+
+And then there's more text
+```
+
+**Expected Outputs**
+
+When used in a `.md` file, the expected preview for the `Markdown` would be a page like the one below. 
+
+![Image](Snippet3MarkdownPreview.jpg)
+
+When tested with our versions of `MarkdownParse.java` the `getLinks` method would return a list as follows:
+```
+[“https://twitter.com”, “https://ucsd-cse15l-w22.github.io/“, “https://cse.ucsd.edu/“]
+```
+
+**Testing this Snippet**
+
+First create a file titled `snippet3.md` containing the code for the Snippet as detailed above. The file you created should look like the image below.
+![Image](Snippet3File.jpg)
+
+Then, in the `MarkdownParseTest.java` file, we will add a `JUnit` test for this file. Add the following code into `MarkdownParseTest.java`.
+```
+//New Test added for Snippet 3 Lab Report 4
+@Test
+public void testMarkDownParseSnippet3() throws IOException{
+    Path fileName = Path.of("snippet3.md");
+    String contents = Files.readString(fileName);
+    assertEquals(List.of("https://twitter.com", "https://ucsd-cse15l-w22.github.io/", "https://cse.ucsd.edu/"), MarkdownParse.getLinks(contents));
+}
+```
+It should look something like the image below.
+![Image](Snippet3JUnitTest.jpg)
+
+**Testing Output**
+
+For my version of `MarkdownParse` the test for Snippet 3 failed. The below image showcases the `JUnit` output that shows the test faulure.
+![Image](Snippet3MyOutput.jpg)
+
+This test also failed for the other version of `MarkdownParse`. The below image showcases the `JUnit` output that shows the test failure.
+![Image](Snippet3OtherOutput.jpg)
+
+## Additional Questions
+---
+
+
 
 
 
