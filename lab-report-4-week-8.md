@@ -100,7 +100,7 @@ public void testMarkDownParseSnippet2() throws IOException{
 }
 ```
 It should look something like the image below.
-![Image](Snippet2JUnitTest.jpg)
+![Image](Snippet2JunitTest.jpg)
 
 **Testing Output**
 
