@@ -1,4 +1,4 @@
-# Lab Report 1 (Week 6)
+# Lab Report 3 (Week 6)
 
 
 Hello! This page covers how to streamline your `ssh` login! Logging onto `ieng6` using `ssh` can sometimes have errors when you have to type in your long username incorrectly. We'll discuss how you can set up a shortcut so you can use a much more convenient input than using your long username each time to log onto `ieng6` using `ssh`. This page assumes you have already set up an `ssh` key such that you no longer have to enter your password. If you need help with this, you can refer to [this webpage](https://aryand10.github.io/cse15l-lab-reports/lab-report-1-week-2.html). The tutorial on this page is primarily for Mac users. 
